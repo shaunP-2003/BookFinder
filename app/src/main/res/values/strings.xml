@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="book_finder">Book Finder</string>
+    <string name="Home">Home</string>
+    <string name="my_books">My Books</string>
+    <string name="book_shelf">Book Shelf</string>
+</resources>

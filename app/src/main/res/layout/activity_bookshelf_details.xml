@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp"
+android:background="#f0f0f0">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:id="@+id/mainTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Details"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="115dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="195dp"
+        android:layout_height="230dp"
+        android:src="@drawable/image"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginStart="75dp"/>
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pride and Prejudice"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="1dp"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jane Austen"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/purple_500"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        android:padding="4dp" />
+
+    <Button
+    android:id="@+id/deleteButton"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="Delete"
+    android:textColor="@android:color/white"
+    android:backgroundTint="@color/red"
+    android:layout_marginTop="25dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:layout_gravity="center_horizontal"
+    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+    app:cornerRadius="5dp" />
+
+
+</LinearLayout>
+</ScrollView>

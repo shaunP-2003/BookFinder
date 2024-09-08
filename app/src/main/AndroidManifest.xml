@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/bookhome"
+        android:label="BookFinder"
+        android:roundIcon="@drawable/bookhome"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="30"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="BookFinder"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".BookDetailsActivity">
+            <!-- No intent filters needed unless this activity is also a direct entry point from the launcher -->
+        </activity>
+        <activity android:name=".BookshelfActivity">
+            <!-- Configuration for the BookshelfActivity -->
+        </activity>
+        <activity android:name=".BookshelfDetailsActivity">
+            <!-- Intent filters go here if necessary -->
+        </activity>
+
+
+    </application>
+
+</manifest>
